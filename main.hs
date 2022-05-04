@@ -16,9 +16,11 @@ main = do
     case white of
         _ -> do
             putStrLn "Invalid! Try a legal move..."
+            return ()
     putStr "\nBlack to move"
     black <- getLine
     case black of
         _ -> do
             putStrLn "Invalid! Try a legal move..."
-    return ()
+            return ()
+    
