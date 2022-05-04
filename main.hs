@@ -3,8 +3,7 @@ module Main where
 
 import Data.Char (isUpper, toLower)
 import Board
-
-
+import Square
 
 main :: IO ()
 main = do
