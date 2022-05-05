@@ -28,9 +28,20 @@ spill = do
     putStr $ concat $ renderBoardPositions $ fromRenderNotation defaultShownBoard
     putStr $ concat $ renderBoard $ fromRenderNotation defaultShownBoard
     putStr "\n"
+    putStrLn "Here are som tips: \nPress r for rules\nPress q to quit\nWhen moving a piece you have to write e2e4 (This will move pawn at E2 to E4)"
+    white
+
+white :: IO ()
+white = do
     putStr "White to move: "
     white <- getLine
     case white of
+        "r" -> do
+            putStrLn "Coming soon"
+        "q" -> do
+            return ()
         _ -> do
             -- move piece
+            -- if this posistion is not a "." and the piece can actually move there without rule violation, piece will move
+            -- Printing new board everytime? Changing the original one? maybe make the board to txt file which can change and is read by a function?
             return ()
