@@ -5,6 +5,7 @@
 
 -- https://wiki.haskell.org/Learning_Haskell_with_Chess
 -- Trying to move pieces
+-- GUI -> gtk
 
 ### Position
 
